@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "my-font-size"
+    }
+  },
+  "defaultProject": "my-font-size",
+  "cli": {
+    "analytics": "c3207410-df54-4592-a242-d33252def5c2"
+  }
 }
