@@ -1,0 +1,22 @@
+<h1>Awesome Calculator</h1>
+
+<div>
+    <!-- <input class="form-input" type="number" [value] = 'first' (change)='onFirstChange($event.target.value)'> -->
+    <!-- //Binding 2 chieu  -->
+    <input class="form-input" type="number" [(ngModel)]='first'>
+    <select class="form-input" [value] = 'operator' (change) ='onOperatorChange($event.target.value)'>
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+    <!-- <input class="form-input" type="number" [value] = 'second' (change)='onSecondChange($event.target.value)'> -->
+    <!-- //Binding 2 chieu  -->
+    <input class="form-input" type="number" [(ngModel)]='second'>           
+</div>
+<div>
+    <button class="form-input" (click)='calculator()'>Thuc thi</button>
+</div>
+<div>
+    <span class="form-input" class="output">{{output}}</span>
+</div>
